@@ -1,0 +1,1634 @@
+/* contact page*/
+
+html {
+  font-size: 100%;
+  font-size-adjust: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #121212;
+  background: #f1f5f8;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+
+
+.main .wrapper {
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.main .form-group {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.25rem;
+  padding-bottom: 1rem;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.main .form-group .input-label {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  color: #121212;
+  text-transform: capitalize;
+  text-rendering: optimizeLegibility;
+}
+.main .form-group .input-field {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: inherit;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem 0;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  border-bottom: 2px solid transparent;
+  color: #121212;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  text-transform: unset;
+  text-rendering: optimizeLegibility;
+}
+.main .form-group .input-check i.fas {
+  position: absolute;
+  font-size: 1rem;
+  line-height: inherit;
+  display: block;
+  top: 2.5rem;
+  right: 1rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.main .form-group .input-alert {
+  position: absolute;
+  display: block;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: inherit;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  color: #f44336;
+}
+.main .form-group .input-submit {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: inherit;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  background: #9c27b0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  text-transform: capitalize;
+  text-rendering: optimizeLegibility;
+}
+.main .form-group.success .input-field {
+  border-bottom: 2px solid #2ecc71;
+}
+.main .form-group.success .input-check i.fa-check-circle {
+  opacity: 1;
+  visibility: visible;
+  color: #2ecc71;
+}
+.main .form-group.error .input-field {
+  border-bottom: 2px solid #f44336;
+}
+.main .form-group.error .input-check i.fa-exclamation-circle {
+  opacity: 1;
+  visibility: visible;
+  color: #f44336;
+}
+.main .form-group.error .input-alert {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*end contact*/
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    background-color:rgba(191, 245, 252, 0);
+    font-family: Arial;
+    margin: 0%;
+    background-image: url('lil.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+
+  }
+  /* SEARCH STYLING*/
+
+  body {
+    font-family: Arial;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Header/logo Title */
+  .jumbotron  {
+    padding: 0px;
+    
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(88, 138, 138);
+  }
+#typing-text {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: .15em;
+  animation: typing 2s steps(30, end);
+  color: Black; /* Set the text color to white */
+}
+  /*navbar*/
+  .navbar {
+    overflow:visible;
+    background-color: #ebfbfca4; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow:visible;
+  
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(219, 231, 235);
+  }
+  
+  .subnav-content {
+    display:none;
+    position: absolute;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:rgb(88, 138, 138);
+  
+    z-index: 1;
+    flex-direction:column;
+  }
+  
+  .subnav-content a {
+    float:none;
+    color: white;
+    text-decoration: none;
+    flex-direction:column;
+    display: block;
+    padding: 12px,16px;
+    text-align: left;
+    
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: flex;
+  }
+  .navbar .icon {
+    display: none;
+  }
+  navbar {
+    display: flex;
+    justify-content: center;
+    background-color:#f1f1f1;
+  }
+  
+  .navbar-link {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .navbar.active {
+    background-color:#2196F3;
+    color: white;
+  }
+  @media screen and (max-width: 100px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 100px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  /* Style the top navigation bar 
+  .nav {
+    float: center;
+    display: flex;
+    justify-content: center;
+    background-color:rgba(191, 245, 252, 0);
+    position: left;
+    overflow:auto;
+  }
+  
+  
+  */
+  /* Change color on hover*/ 
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Column container */
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%;
+    background-color:rgb(191, 245, 252);
+    padding: 20px;
+  }
+  h1{
+    color: black;
+  }
+  
+  /* Main column */
+  /* not working
+  .main {
+    flex: 70%;
+    background-color:blue;
+    padding: 20px;
+  }
+  */
+ .logo{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .logo-text{
+    display: flex;
+    text-align: center;
+   
+  }
+  /* Event page styling*/
+  
+/* Column container */
+.row-map {  
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color:rgba(191, 245, 252, 0);
+  padding: 20px;
+  color: black;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+ 
+
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+  /* form styling*/
+  * {
+    box-sizing: border-box; 
+   }
+   .myForm {
+     display: flex;
+     background-color:rgba(0, 0, 0, 0);
+     border-radius: 2px;
+     padding: 40px;
+     color: black;
+     float: right;
+   }
+   .message {
+     display: flex;
+     flex-direction: column;
+     order: 2;
+   }
+   .message > textarea {
+    flex: 1; 
+    min-width: 18em;
+   }
+   .contact {
+      flex: 1; 
+     order: 1;
+      margin-right: 2em; 
+   }
+   .contact input {
+     width: 100%;
+   }
+   .contact input,
+   .contact button {
+     padding: 1em;
+     margin-bottom: 1em;
+   }
+   .contact button {
+    background: gray;
+    color: white;
+    border: 0;
+   }
+   
+ 
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /* Style the body */
+ body {
+   font-family: Arial;
+   margin: 0;
+ }
+ 
+ 
+ /* Column container */
+ .row {  
+   display: flex;
+   flex-wrap: wrap;
+   
+ }
+ 
+ /* Create two unequal columns that sits next to each other */
+ /* Sidebar/left column */
+ .side {
+   flex: 30%;
+   background-color: #f1f1f1d3;
+   padding: 20px;
+ }
+ 
+ /* Main column */
+ .main {
+   flex: 70%;
+   background-color: rgba(255, 255, 255, 0.5);
+   padding: 20px;
+   font-family:Times;
+   
+  
+ }
+ .p,p1,p2 {
+  font-size:20px;
+  word-break: break-all;
+  text-align: center;
+  text-rendering: auto;
+}
+
+ 
+ .Button{
+  justify-content:center;
+  border-radius:150px;
+  border-width: 100;
+  
+  background-color:rgb(88, 138, 138);
+  font-size:xx-large;
+  color: #f1f1f1;
+  justify-content: center;
+  
+
+ }
+ .home{
+  background-color: #ebfbfca4; 
+  padding: 50px 50px;
+  height: fit-content;
+  color:rgb(62, 62, 111);
+ }
+ li{
+	 font: size 10px;
+	 text-align:center;
+  text-indent: initial;
+ }
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: square inside url("sqpurple.gif");
+}
+
+   
+    ul.a {
+      list-style-type: circle;
+      list-style-position: inside;
+    }
+    
+    ul.b {
+      list-style-type: square;
+    }
+    
+    ol.c {
+      list-style-type: upper-roman;
+    }
+    
+    ol.d {
+      list-style-type: lower-alpha;
+    }
+ /* Footer */
+ .footer {
+   padding: 5px;
+   text-align: center;
+   color: white;
+   background-color:rgb(88, 138, 138);
+   justify-content:last baseline;
+ }
+ .small-print {
+  padding: 5px;
+  text-align: center;
+  color:white;
+  background-color:rgb(88, 138, 138);
+  justify-content:last baseline;
+}
+.cont{
+  padding: 5px;
+  text-align: center;
+  color:white;
+  background-color:rgb(88, 138, 138);
+  justify-content:last baseline;
+}
+ 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+  /* Event page stlying images*/
+  
+   .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .card {
+    flex: 0 0 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    color: white;
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: rgb(88, 138, 138);
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+  }
+ 
+ 
+/* FAQ STYLING*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+/* Center website Teaching staff */
+.mainteaching {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 60px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*about us*/
+* 
+img {
+ 
+  height: auto;
+
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+ 
+  .col-3 {width: 25%;}
+  .col-6 {width: 50%;}
+    
+  }
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+
+
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color :rgb(88, 138, 138);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+.aside {
+  background-color: rgb(88, 138, 138);
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+div.a {
+  font-size: 25px;
+  
+}
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  text-decoration: none;
+  text-shadow: #f1f1f1;
+  text-decoration-color: #ffffff;
+  -moz-text-decoration-color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/*Copy code
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+}
+*/
+.nav-link {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  background-color:rgb(88, 138, 138);
+}
+
+.active {
+  background-color: rgb(88, 138, 138);
+  color: white;
+}
+
+ /*--------------------------------------------------------------
+
+# Call To Action Section
+
+--------------------------------------------------------------*/
+
+.call-to-action .container {
+
+  background: linear-gradient(rgb(88, 138, 138), rgba(0, 0, 0, 0.945)), url("learn.webp") center center;
+  
+ background-size: cover;
+  
+ padding: 100px 60px;
+  
+border-radius: 15px;
+  
+overflow: hidden;
+  
+font-size:x-large;
+  
+ color: #ebebeb;
+  
+  }
+  
+  has context menu
+
+  /*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: hsl(0, 0%, 100%);
+ padding: 60px 0;
+  }
+  
+ 
+  
+  .team .member {
+ margin-bottom: 20px;
+ overflow: hidden;
+   border-radius: 5px;
+   background: #fff;
+ box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+  .team .member .member-img {
+position: relative;
+ overflow: hidden;
+  }
+  
+
+  
+  .team .member .social {
+position: absolute;
+  left: 0;
+bottom: 30px;
+right: 0;
+ opacity: 0;
+  transition: ease-in-out 0.3s;
+ text-align: center;
+  }
+  
+ 
+  
+  .team .member .social a {
+ transition: color 0.3s;
+color: #151515;
+ margin: 0 3px;
+  border-radius: 4px;
+width: 36px;
+  height: 36px;
+ background: rgba(255, 255, 255, 0.8);
+  transition: ease-in-out 0.3s;
+color: #484848;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+ 
+  
+  .team .member .social a:hover {
+   color: #151515;
+ background: #ffc451;
+  }
+  
+  
+  
+  .team .member .social i {
+  font-size: 18px;
+  line-height: 0;
+  }
+  
+ 
+  
+  .team .member .member-info {
+ padding: 25px 15px;
+  }
+  
+ 
+  
+  .team .member .member-info h4 {
+ font-weight: 700;
+  margin-bottom: 5px;
+ font-size: 18px;
+  color: #151515;
+  }
+  
+ 
+  
+  .team .member .member-info span {
+display: block;
+ font-size: 13px;
+ font-weight: 400;
+ color: #aaaaaa;
+  }
+  
+ 
+  
+  .team .member .member-info p {
+  font-style: italic;
+ font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+  }
+  
+ 
+  
+  .team .member:hover .social {
+opacity: 1;
+ bottom: 15px;
+  }
+  /*Sport alignment(list) */
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+/*Awards*/
+body {
+font-family: Arial;
+margin: 0;
+  }
+  
+
+  
+  * {
+  box-sizing: border-box;
+  }
+  
+  
+  
+  img {
+   vertical-align: middle;
+  }
+  
+  
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+   position: relative;
+  }
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+   display: none;
+  }
+  
+  
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+   cursor: pointer;
+  }
+  
+  
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+   cursor: pointer;
+   position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+   font-size: 20px;
+  border-radius: 0 3px 3px 0;
+   user-select: none;
+   -webkit-user-select: none;
+  }
+  
+  
+  
+  /* Position the "next button" to the right */
+  .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+  }
+  
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+  position: absolute;
+   top: 0;
+  }
+  
+  
+  
+  /* Container for image text */
+  .caption-container {
+  text-align: center;
+   background-color: #222;
+   padding: 2px 16px;
+   color: white;
+  }
+  
+  
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+  
+  
+  /* Six columns side by side */
+  .column {
+  float: left;
+   width: 16.66%;
+  }
+  
+  
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+  opacity: 0.6;
+  }
+  
+  
+  
+  .active,
+  .demo:hover {
+  opacity: 1;
+  }
+
+/*--------------------------------------------------------------
+
+# Services
+
+--------------------------------------------------------------*/
+
+.services .icon-box {
+
+  text-align: center;
+  
+  border: 1px solid #ebebeb;
+  
+  padding: 80px 20px;
+  
+  transition: all ease-in-out 0.3s;
+  
+  background: #fff;
+  border-radius: 50px;
+
+  transform: scale(1.05);
+  
+  }
+  
+  
+  .services .icon-box .icon {
+  
+ margin: 0 auto;
+  
+  width: 64px;
+  
+  height: 64px;
+  
+background:rgb(88, 138, 138);
+  
+border-radius: 4px;
+  
+ display: flex;
+  
+align-items: center;
+  
+  justify-content: center;
+  
+ margin-bottom: 20px;
+  
+  transition: 0.3s;
+  
+  }
+  
+
+  
+  .services .icon-box .icon i {
+  
+ color: #151515;
+  
+  font-size: 28px;
+  
+ transition: ease-in-out 0.3s;
+  
+  }
+  
+
+  
+  .services .icon-box h4 {
+  
+  font-weight: 700;
+  
+ margin-bottom: 15px;
+  
+ font-size: 24px;
+  
+  }
+  
+
+  
+  .services .icon-box h4 a {
+  
+color: #151515;
+  
+ transition: ease-in-out 0.3s;
+  
+  }
+  
+
+  
+  .services .icon-box h4 a:hover {
+  
+ color: #ffc451;
+  
+  }
+  
+
+  
+  .services .icon-box p {
+  
+line-height: 24px;
+  
+ font-size: 20px;
+   margin-bottom: 0;
+  
+  }
+  
+
+  
+  .services .icon-box:hover {
+  
+ border-color: #fff;
+  
+ box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  
+transform: translateY(-10px);
+  
+  }
+
+  /*Donation Form*/
+
+  .row {
+  
+  display: -ms-flexbox; /* IE10 */
+  
+display: flex;
+  
+  -ms-flex-wrap: wrap; /* IE10 */
+  
+ flex-wrap: wrap;
+  
+margin: 0 -16px;
+  
+}
+  
+ 
+  
+.col-25 {
+  
+ -ms-flex: 25%; /* IE10 */
+  
+flex: 25%;
+  
+ }
+  
+ 
+  
+ .col-50 {
+  
+   -ms-flex: 50%; /* IE10 */
+  
+flex: 50%;
+  
+ }
+  
+
+  
+ .col-75 {
+  
+ -ms-flex: 75%; /* IE10 */
+  
+ flex: 75%;
+  
+ }
+  
+ 
+  
+  .col-25,
+  
+ .col-50,
+  
+  .col-75 {
+  
+ padding: 0 80px;
+  
+  }
+  
+ 
+  
+ .container-donation {
+  
+ background: rgba(224, 215, 215, 0.664);
+  
+ 
+  
+  border: 1px solid white;
+  
+ border-radius: 1px;
+  
+ }
+  
+
+  
+ input[type=text] {
+  
+ width: 100%;
+  
+ margin-bottom: 20px;
+  
+ padding: 12px;
+  
+ border: 1px solid #ccc;
+  
+   border-radius: 3px;
+  
+   }
+  
+ 
+ label {
+  
+  margin-bottom: 10px;
+  
+display: block;
+  
+}
+  
+ 
+  
+  .icon-container {
+  
+  margin-bottom: 20px;
+  
+padding: 7px 0;
+  
+font-size: 24px;
+  
+ }
+  
+
+  
+  .Donationbtn {
+  
+  background-color:#3a8399;
+  
+ color: white;
+  
+ padding: 8px;
+  
+margin: 10px 0;
+  
+ border: none;
+  
+ width: 30%;
+  
+border-radius: 3px;
+  
+ cursor: pointer;
+  
+  font-size: 17px;
+  
+ justify-content: center;
+  
+ }
+  
+
+  
+  .Donationbtn:hover {
+  
+ background-color: black;
+  
+ }
+  
+
+  
+  a {
+  
+  color: grey;
+  
+   }
+  
+ 
+  
+   hr {
+  
+   border: 1px solid lightgrey;
+  
+ }
+  
+ 
+  
+ span.price {
+  
+  float: right;
+  
+  color: grey;
+  
+ }
+
+ /*FAQ container*/
+ .call-to-action .container {
+
+  background: linear-gradient(rgb(88, 138, 138),), url("learn.webp") center center;
+  
+ background-size: cover;
+  
+ padding: 100px 60px;
+  
+border-radius: 15px;
+  
+overflow: hidden;
+  
+font-size:x-large;
+  
+ color: #ebebeb;
+  
+  }
+  
+  has context menu
+
+  /* FAQ STYLING*/
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: black;
+}
+
+.accordion:after {
+  content: '\002B';
+  color:rgb(88, 138, 138);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgb(88, 138, 138);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*staff*/
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  background-color: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: dodgerblue;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+  --------------------------------------------------------------*/
+#footer {
+  background: white;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: rgb(88, 138, 138);
+  border-bottom: 1px solid white;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  color: white;
+ 
+}
+
+#footer .footer-top .footer-info h3 span {
+  color: #ffc451;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: white;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #ffc451;
+  color: white;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  padding-bottom: 12px;
+}
+.footer-links h4, .footer-links ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #ffc451;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #ffc451;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #ffc451;
+  color: white;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+  background: rgb(88, 138, 138);;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+/*canvas*/
+canvas {
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#playbutton {
+  width: 100px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+}
+/*Donate Buttons*/
+.btn{
+font-size: larger;
+font-weight: 50px;
+
+}
+.btn button{
+  border-radius: 0.05px;
+  background: #ffc451;
+  margin-right: -50px;
+}
+.btn button span{
+
+color: white;
+}
+.btn button a:hover{
+  background: rgb(88, 138, 138);
+}

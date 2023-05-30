@@ -1,0 +1,29 @@
+body {
+
+background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+    
+background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://gj-wes.github.io/codepen/FCC_WikiApp/images/books_bg.jpg') no-repeat center fixed;
+    
+ background-size: fixed;
+    
+    }
+    
+    
+    
+    
+    
+    .header {
+    
+margin: 25px 0px 25px 0px;
+    
+font-size: 28px;
+    
+color: #FFFFFF;
+    
+    }
+    
+    
+
+ 

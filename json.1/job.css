@@ -1,0 +1,140 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  right: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+   overflow-x: hidden; 
+    color: #204763; /*primary HCR brand color*/
+    scroll-behavior: smooth;
+  overscroll-behavior-y: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.SubmitBtns {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.roundBtns {
+  color: white;
+  width: 25vw;
+  min-width: 275px;
+  height: 150px;
+  margin: 20px;
+  background-color: #204763;
+  border-radius: 30px;
+  font-size: 1.5em;
+  white-space: nowrap;
+  border: 2px double white;
+}
+
+.roundBtns:hover {
+  background-color: #298acb;
+  opacity: .75;
+}
+
+.form-container {
+  display: flex;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 5px 20px grey, 0 8px 10px #204763;
+  position: relative;
+  overflow: hidden;
+  width: 720px;
+  max-width: 95%;
+  min-width: 330px;
+  min-height: 490px;
+  margin: 20px auto;
+}
+
+.right-container {
+  display: flex;
+  flex: 1.15;
+  height: 500px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  flex: 0.75;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #204763;
+  color: white;
+  padding: 0px 10px;
+}
+
+.left-container h2 {
+  margin-top: -30px;
+}
+
+#CVTable .left-container {
+  border-right: 5px double #298acb;
+}
+
+#JobTable .left-container {
+  background-color: #298acb;
+  border-right: 5px double #204763;
+}
+
+.right-inner-container {
+  overflow: hidden;
+  height: auto;
+  width: 80%;
+  margin: 20px;
+  text-align: center;
+}
+
+.left-inner-container {
+  height: 50%;
+  width: 90%;
+  text-align: center;
+  line-height: 30px;
+}
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 11px 15px;
+  margin: 7px 0;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #204763;
+}
+
+@media only screen and (min-width: 768px) {
+  .sml-view {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-container {
+    display: none;
+  }
+  
+  .SubmitBtns {
+      text-align: center;
+  }
+  
+  .roundBtns {
+  width: 75vw;
+    font-size: 1.5em;
+}
+}
